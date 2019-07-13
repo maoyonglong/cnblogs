@@ -1,5 +1,12 @@
 body {
-    background: url(https://github.com/maoyonglong/cnblogs/bg.jpg) fixed;
+    background: url(https://github.com/maoyonglong/cnblogs/blob/master/bg.jpg?raw=true) fixed;
+}
+
+/* 解决margin融合问题 */
+body:before {
+    content: '';
+    display: block;
+    overflow: hidden;
 }
 
 #home {
@@ -22,6 +29,7 @@ body {
 #navList {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
 }
@@ -32,12 +40,33 @@ body {
     font-size: 20px;
 }
 
-/* 公告栏 */
-.newsItem {
+/* 侧边栏项目 */
+.newsItem, 
+.catListEssay, 
+.catListLink, 
+.catListNoteBook, 
+.catListTag, 
+.catListPostCategory, 
+.catListPostArchive, 
+.catListImageCategory, 
+.catListArticleArchive, 
+.catListView, 
+.catListFeedback, 
+.mySearch, 
+.catListComment, 
+.catListBlogRank, 
+.catList, 
+.catListArticleCategory {
     background: transparent;
 }
 
-/* 日期 */
-.CalDayHeader {
-    background: transparent;
+/* 搜索框 */
+.input_my_zzk {
+    background-color: #f8f8f8;
+}
+
+/* fork */
+#fork {
+    position: fixed;
+    right: 0;
 }
