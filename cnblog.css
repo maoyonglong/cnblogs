@@ -1,0 +1,43 @@
+body {
+    background: url(https://github.com/maoyonglong/cnblogs/bg.jpg) fixed;
+}
+
+#home {
+    background: rgba(255,255,255,.8);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 10px 4px #aaa;
+}
+
+/* 名字标题 */
+.headermaintitle {
+    text-shadow: 2px 2px 1px #ccc;
+}
+
+/* 导航 */
+#navigator {
+    border: 0;
+}
+
+/* 导航菜单 */
+#navList {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+
+/* 导航菜单项 */
+.menu {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* 公告栏 */
+.newsItem {
+    background: transparent;
+}
+
+/* 日期 */
+.CalDayHeader {
+    background: transparent;
+}
